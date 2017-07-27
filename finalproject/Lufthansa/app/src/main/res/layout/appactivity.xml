@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Centered horizontally invisible view -->
+        <Space
+            android:id="@+id/centerView"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <!-- label -->
+        <TextView
+            android:id="@+id/label"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <!-- Game UI -->
+        <ImageView
+            android:id="@+id/locationImage"
+            android:layout_below="@id/label"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+
+        <!-- Airline Departure -->
+
+        <TextView
+            android:id="@+id/departure"
+            android:background="#F08080"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_width="160dp"
+            android:layout_below="@id/locationImage"
+            android:layout_marginTop="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/AirportCode"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/departure"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/ScheduledTimeLocal"
+            android:layout_below="@id/AirportCode"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/ActualTimeLocal"
+            android:layout_below="@id/ScheduledTimeLocal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/TimeStatus"
+            android:layout_below="@id/ActualTimeLocal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/Terminal"
+            android:layout_below="@id/TimeStatus"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <!-- Airline Arrival -->
+
+        <TextView
+            android:id="@+id/arrival"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:background="#F08080"
+            android:layout_width="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Terminal"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/aAirportCode"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/arrival"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/aScheduledTimeLocal"
+            android:layout_below="@id/aAirportCode"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/aActualTimeLocal"
+            android:layout_below="@id/aScheduledTimeLocal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/aTimeStatus"
+            android:layout_below="@id/aActualTimeLocal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/aTerminal"
+            android:layout_below="@id/aTimeStatus"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
